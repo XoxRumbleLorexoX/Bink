@@ -9,3 +9,8 @@ then
 
 ```python bink.py```
 
+Other notes:
+
+Utilised ```assert``` to do unit tests.
+
+
