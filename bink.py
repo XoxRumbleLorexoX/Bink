@@ -52,3 +52,10 @@ print('\n')
 #check if the lease years are 25
 h = input("Choose a value from 0.." +str(len(leaseYears25))+" to assert whether the list comprehension executed succesfully and all the lease years are equal to 25. The script should continue & will not throw any errors if it is correct\n")
 assert leaseYears25[int(h)][9] == 25
+
+
+#2b
+totalrent25 = [i[10] for i in leaseYears25]
+print("The total rent for all items in the list where lease years is equal to 25:\n")
+print(sum(totalrent25))
+print('\n')
