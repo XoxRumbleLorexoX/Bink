@@ -27,3 +27,12 @@ print('\n')
 #unit test 1a
 #check if highest value is the last value unit test
 assert sortedByRent[-1][10] == 28327.09
+
+
+#1b
+print("The first 5 items in the list:\n")
+print(sortedByRent[:5])
+print('\n')
+#unit test 1b
+#check if the length of the first 5 from the sortedbyrent array is eual to 5
+assert len(sortedByRent[:5]) == 5
