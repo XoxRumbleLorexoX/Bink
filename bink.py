@@ -59,3 +59,15 @@ totalrent25 = [i[10] for i in leaseYears25]
 print("The total rent for all items in the list where lease years is equal to 25:\n")
 print(sum(totalrent25))
 print('\n')
+
+
+#3a
+tenantNameMasts = {}
+tenantNameMasts['Cornerstone Telecommunications Infrastructure'] = Cornerstone=sum([i.count("Cornerstone Telecommunications Infrastructure") for i in rows])
+tenantNameMasts['EE']=sum([i.count("EE") for i in rows])
+tenantNameMasts['Arqiva']=sum([i.count("Arqiva") for i in rows])
+tenantNameMasts['O2 (UK) Ltd']=sum([i.count("O2 (UK) Ltd") for i in rows])
+tenantNameMasts['Vodafone']=Vodafone=sum([i.count("Vodafone") for i in rows])
+print("Dictionary containing the Tenant Names & the count of masts in HRF: \n")
+print(tenantNameMasts)
+print('\n')
