@@ -36,3 +36,19 @@ print('\n')
 #unit test 1b
 #check if the length of the first 5 from the sortedbyrent array is eual to 5
 assert len(sortedByRent[:5]) == 5
+
+
+#2a
+#making strings integers
+for i in rows:
+    i[9]=int(i[9])
+#list comprehension
+leaseYears25 = [i for i in rows if i[9]==25]
+#data fields where lease years = 25
+print("The list entries where Lease Years is equal to 25:\n")
+print(leaseYears25)
+print('\n')
+#unite test 2a
+#check if the lease years are 25
+h = input("Choose a value from 0.." +str(len(leaseYears25))+" to assert whether the list comprehension executed succesfully and all the lease years are equal to 25. The script should continue & will not throw any errors if it is correct\n")
+assert leaseYears25[int(h)][9] == 25
