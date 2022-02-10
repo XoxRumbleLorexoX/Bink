@@ -71,3 +71,16 @@ tenantNameMasts['Vodafone']=Vodafone=sum([i.count("Vodafone") for i in rows])
 print("Dictionary containing the Tenant Names & the count of masts in HRF: \n")
 print(tenantNameMasts)
 print('\n')
+
+
+#4a
+for i in rows:
+    i[7]=datetime.strptime(i[7], "%d %b %Y").strftime("%d/%m/%Y")
+    i[8]=datetime.strptime(i[8], "%d %b %Y").strftime("%d/%m/%Y")
+
+#print(time.strptime(rows[0][7], "%d/%m/%Y") > )
+leasestartdate = [i for i in rows if time.strptime(i[7], "%d/%m/%Y") < time.strptime("31/08/2007", "%d/%m/%Y") and time.strptime(i[7], "%d/%m/%Y") > time.strptime("01/06/1999", "%d/%m/%Y")]
+
+print("The entries where the Lease Start Date fell between 1st June 1999 and 31st August 2007: \n")
+print(leasestartdate)
+print("\n")
